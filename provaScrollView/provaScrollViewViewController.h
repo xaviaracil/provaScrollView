@@ -10,6 +10,10 @@
 
 @interface provaScrollViewViewController : UIViewController {
     
+    UIScrollView *publicTimelineScrollView;
+    NSArray *timelineArray;
 }
+@property (nonatomic, retain) IBOutlet UIScrollView *publicTimelineScrollView;
+@property (nonatomic, retain) IBOutlet NSArray *timelineArray;
 
 @end
