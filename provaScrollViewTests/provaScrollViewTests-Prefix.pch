@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'provaScrollViewTests' target in the 'provaScrollViewTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		470F9B83137B1B5D0060B69C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F9B82137B1B5D0060B69C /* UIKit.framework */; };
+		470F9B85137B1B5D0060B69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F9B84137B1B5D0060B69C /* Foundation.framework */; };
+		470F9B87137B1B5D0060B69C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F9B86137B1B5D0060B69C /* CoreGraphics.framework */; };
+		470F9B8D137B1B5D0060B69C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 470F9B8B137B1B5D0060B69C /* InfoPlist.strings */; };
+		470F9B90137B1B5D0060B69C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 470F9B8F137B1B5D0060B69C /* main.m */; };
+		470F9B93137B1B5D0060B69C /* provaScrollViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 470F9B92137B1B5D0060B69C /* provaScrollViewAppDelegate.m */; };
+		470F9B96137B1B5D0060B69C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470F9B94137B1B5D0060B69C /* MainWindow.xib */; };
+		470F9B99137B1B5D0060B69C /* provaScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470F9B98137B1B5D0060B69C /* provaScrollViewViewController.m */; };
+		470F9B9C137B1B5D0060B69C /* provaScrollViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470F9B9A137B1B5D0060B69C /* provaScrollViewViewController.xib */; };
+		470F9BA3137B1B5D0060B69C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F9B82137B1B5D0060B69C /* UIKit.framework */; };
+		470F9BA4137B1B5D0060B69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F9B84137B1B5D0060B69C /* Foundation.framework */; };
+		470F9BA5137B1B5D0060B69C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F9B86137B1B5D0060B69C /* CoreGraphics.framework */; };
+		470F9BAD137B1B5D0060B69C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 470F9BAB137B1B5D0060B69C /* InfoPlist.strings */; };
+		470F9BB0137B1B5D0060B69C /* provaScrollViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 470F9BAF137B1B5D0060B69C /* provaScrollViewTests.h */; };
+		470F9BB2137B1B5D0060B69C /* provaScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 470F9BB1137B1B5D0060B69C /* provaScrollViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		470F9BA6137B1B5D0060B69C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 470F9B75137B1B5C0060B69C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 470F9B7D137B1B5D0060B69C;
+			remoteInfo = provaScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		470F9B7E137B1B5D0060B69C /* provaScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = provaScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		470F9B82137B1B5D0060B69C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		470F9B84137B1B5D0060B69C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		470F9B86137B1B5D0060B69C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		470F9B8A137B1B5D0060B69C /* provaScrollView-Info.plist */ = {isa = PBXFileReference; path = "provaScrollView-Info.plist"; sourceTree = "<group>"; };
+		470F9B8C137B1B5D0060B69C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		470F9B8E137B1B5D0060B69C /* provaScrollView-Prefix.pch */ = {isa = PBXFileReference; path = "provaScrollView-Prefix.pch"; sourceTree = "<group>"; };
+		470F9B8F137B1B5D0060B69C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		470F9B91137B1B5D0060B69C /* provaScrollViewAppDelegate.h */ = {isa = PBXFileReference; path = provaScrollViewAppDelegate.h; sourceTree = "<group>"; };
+		470F9B92137B1B5D0060B69C /* provaScrollViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = provaScrollViewAppDelegate.m; sourceTree = "<group>"; };
+		470F9B95137B1B5D0060B69C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		470F9B97137B1B5D0060B69C /* provaScrollViewViewController.h */ = {isa = PBXFileReference; path = provaScrollViewViewController.h; sourceTree = "<group>"; };
+		470F9B98137B1B5D0060B69C /* provaScrollViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = provaScrollViewViewController.m; sourceTree = "<group>"; };
+		470F9B9B137B1B5D0060B69C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/provaScrollViewViewController.xib; sourceTree = "<group>"; };
+		470F9BA2137B1B5D0060B69C /* provaScrollViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = provaScrollViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		470F9BAA137B1B5D0060B69C /* provaScrollViewTests-Info.plist */ = {isa = PBXFileReference; path = "provaScrollViewTests-Info.plist"; sourceTree = "<group>"; };
+		470F9BAC137B1B5D0060B69C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		470F9BAE137B1B5D0060B69C /* provaScrollViewTests-Prefix.pch */ = {isa = PBXFileReference; path = "provaScrollViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		470F9BAF137B1B5D0060B69C /* provaScrollViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = provaScrollViewTests.h; sourceTree = "<group>"; };
+		470F9BB1137B1B5D0060B69C /* provaScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = provaScrollViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		470F9B7B137B1B5D0060B69C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F9B83137B1B5D0060B69C /* UIKit.framework in Frameworks */,
+				470F9B85137B1B5D0060B69C /* Foundation.framework in Frameworks */,
+				470F9B87137B1B5D0060B69C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470F9B9E137B1B5D0060B69C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F9BA3137B1B5D0060B69C /* UIKit.framework in Frameworks */,
+				470F9BA4137B1B5D0060B69C /* Foundation.framework in Frameworks */,
+				470F9BA5137B1B5D0060B69C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		470F9B73137B1B5C0060B69C = {
+			isa = PBXGroup;
+			children = (
+				470F9B88137B1B5D0060B69C /* provaScrollView */,
+				470F9BA8137B1B5D0060B69C /* provaScrollViewTests */,
+				470F9B81137B1B5D0060B69C /* Frameworks */,
+				470F9B7F137B1B5D0060B69C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		470F9B7F137B1B5D0060B69C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				470F9B7E137B1B5D0060B69C /* provaScrollView.app */,
+				470F9BA2137B1B5D0060B69C /* provaScrollViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		470F9B81137B1B5D0060B69C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				470F9B82137B1B5D0060B69C /* UIKit.framework */,
+				470F9B84137B1B5D0060B69C /* Foundation.framework */,
+				470F9B86137B1B5D0060B69C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		470F9B88137B1B5D0060B69C /* provaScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				470F9B91137B1B5D0060B69C /* provaScrollViewAppDelegate.h */,
+				470F9B92137B1B5D0060B69C /* provaScrollViewAppDelegate.m */,
+				470F9B94137B1B5D0060B69C /* MainWindow.xib */,
+				470F9B97137B1B5D0060B69C /* provaScrollViewViewController.h */,
+				470F9B98137B1B5D0060B69C /* provaScrollViewViewController.m */,
+				470F9B9A137B1B5D0060B69C /* provaScrollViewViewController.xib */,
+				470F9B89137B1B5D0060B69C /* Supporting Files */,
+			);
+			path = provaScrollView;
+			sourceTree = "<group>";
+		};
+		470F9B89137B1B5D0060B69C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				470F9B8A137B1B5D0060B69C /* provaScrollView-Info.plist */,
+				470F9B8B137B1B5D0060B69C /* InfoPlist.strings */,
+				470F9B8E137B1B5D0060B69C /* provaScrollView-Prefix.pch */,
+				470F9B8F137B1B5D0060B69C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		470F9BA8137B1B5D0060B69C /* provaScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				470F9BAF137B1B5D0060B69C /* provaScrollViewTests.h */,
+				470F9BB1137B1B5D0060B69C /* provaScrollViewTests.m */,
+				470F9BA9137B1B5D0060B69C /* Supporting Files */,
+			);
+			path = provaScrollViewTests;
+			sourceTree = "<group>";
+		};
+		470F9BA9137B1B5D0060B69C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				470F9BAA137B1B5D0060B69C /* provaScrollViewTests-Info.plist */,
+				470F9BAB137B1B5D0060B69C /* InfoPlist.strings */,
+				470F9BAE137B1B5D0060B69C /* provaScrollViewTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		470F9B7D137B1B5D0060B69C /* provaScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470F9BB5137B1B5D0060B69C /* Build configuration list for PBXNativeTarget "provaScrollView" */;
+			buildPhases = (
+				470F9B7A137B1B5D0060B69C /* Sources */,
+				470F9B7B137B1B5D0060B69C /* Frameworks */,
+				470F9B7C137B1B5D0060B69C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = provaScrollView;
+			productName = provaScrollView;
+			productReference = 470F9B7E137B1B5D0060B69C /* provaScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		470F9BA1137B1B5D0060B69C /* provaScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470F9BB8137B1B5D0060B69C /* Build configuration list for PBXNativeTarget "provaScrollViewTests" */;
+			buildPhases = (
+				470F9B9D137B1B5D0060B69C /* Sources */,
+				470F9B9E137B1B5D0060B69C /* Frameworks */,
+				470F9B9F137B1B5D0060B69C /* Resources */,
+				470F9BA0137B1B5D0060B69C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				470F9BA7137B1B5D0060B69C /* PBXTargetDependency */,
+			);
+			name = provaScrollViewTests;
+			productName = provaScrollViewTests;
+			productReference = 470F9BA2137B1B5D0060B69C /* provaScrollViewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		470F9B75137B1B5C0060B69C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 470F9B78137B1B5C0060B69C /* Build configuration list for PBXProject "provaScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 470F9B73137B1B5C0060B69C;
+			productRefGroup = 470F9B7F137B1B5D0060B69C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				470F9B7D137B1B5D0060B69C /* provaScrollView */,
+				470F9BA1137B1B5D0060B69C /* provaScrollViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		470F9B7C137B1B5D0060B69C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F9B8D137B1B5D0060B69C /* InfoPlist.strings in Resources */,
+				470F9B96137B1B5D0060B69C /* MainWindow.xib in Resources */,
+				470F9B9C137B1B5D0060B69C /* provaScrollViewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470F9B9F137B1B5D0060B69C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F9BAD137B1B5D0060B69C /* InfoPlist.strings in Resources */,
+				470F9BB0137B1B5D0060B69C /* provaScrollViewTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		470F9BA0137B1B5D0060B69C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		470F9B7A137B1B5D0060B69C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F9B90137B1B5D0060B69C /* main.m in Sources */,
+				470F9B93137B1B5D0060B69C /* provaScrollViewAppDelegate.m in Sources */,
+				470F9B99137B1B5D0060B69C /* provaScrollViewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470F9B9D137B1B5D0060B69C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F9BB2137B1B5D0060B69C /* provaScrollViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		470F9BA7137B1B5D0060B69C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 470F9B7D137B1B5D0060B69C /* provaScrollView */;
+			targetProxy = 470F9BA6137B1B5D0060B69C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		470F9B8B137B1B5D0060B69C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				470F9B8C137B1B5D0060B69C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		470F9B94137B1B5D0060B69C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				470F9B95137B1B5D0060B69C /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		470F9B9A137B1B5D0060B69C /* provaScrollViewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				470F9B9B137B1B5D0060B69C /* en */,
+			);
+			name = provaScrollViewViewController.xib;
+			sourceTree = "<group>";
+		};
+		470F9BAB137B1B5D0060B69C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				470F9BAC137B1B5D0060B69C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		470F9BB3137B1B5D0060B69C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		470F9BB4137B1B5D0060B69C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		470F9BB6137B1B5D0060B69C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "provaScrollView/provaScrollView-Prefix.pch";
+				INFOPLIST_FILE = "provaScrollView/provaScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		470F9BB7137B1B5D0060B69C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "provaScrollView/provaScrollView-Prefix.pch";
+				INFOPLIST_FILE = "provaScrollView/provaScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		470F9BB9137B1B5D0060B69C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/provaScrollView.app/provaScrollView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "provaScrollViewTests/provaScrollViewTests-Prefix.pch";
+				INFOPLIST_FILE = "provaScrollViewTests/provaScrollViewTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		470F9BBA137B1B5D0060B69C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/provaScrollView.app/provaScrollView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "provaScrollViewTests/provaScrollViewTests-Prefix.pch";
+				INFOPLIST_FILE = "provaScrollViewTests/provaScrollViewTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		470F9B78137B1B5C0060B69C /* Build configuration list for PBXProject "provaScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470F9BB3137B1B5D0060B69C /* Debug */,
+				470F9BB4137B1B5D0060B69C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470F9BB5137B1B5D0060B69C /* Build configuration list for PBXNativeTarget "provaScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470F9BB6137B1B5D0060B69C /* Debug */,
+				470F9BB7137B1B5D0060B69C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		470F9BB8137B1B5D0060B69C /* Build configuration list for PBXNativeTarget "provaScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470F9BB9137B1B5D0060B69C /* Debug */,
+				470F9BBA137B1B5D0060B69C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 470F9B75137B1B5C0060B69C /* Project object */;
+}
