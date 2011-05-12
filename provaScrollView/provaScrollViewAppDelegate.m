@@ -3,7 +3,7 @@
 //  provaScrollView
 //
 //  Created by Xavi Aracil on 11/05/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 xadSolutions. All rights reserved.
 //
 
 #import "provaScrollViewAppDelegate.h"
