@@ -25,11 +25,16 @@
 @synthesize timelineArray;
 @synthesize lightTweetViewDemo;
 @synthesize viewControllers;
+@synthesize feedItems;
+@synthesize webContainerView;
+@synthesize firstItemWebView;
 
 - (void)dealloc
 {
     [searchResultsScrollView release];
     [lightTweetViewDemo release];
+    [firstItemWebView release];
+    [webContainerView release];
     [super dealloc];
 }
 
@@ -43,16 +48,24 @@
 
 #pragma mark - View lifecycle
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-/*
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}*/
+    // Do any additional setup after loading the view from its nib.
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+    tapGesture.numberOfTapsRequired = 1;
+    tapGesture.numberOfTouchesRequired = 1;
+    [self.webContainerView addGestureRecognizer:tapGesture]; 
+    [tapGesture release];
+    
+}
 
 - (void)viewDidUnload
 {
     [self setSearchResultsScrollView:nil];
     [self setLightTweetViewDemo:nil];
+    [self setFirstItemWebView:nil];
+    [self setWebContainerView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -110,6 +123,33 @@
     
     // display first tweet in a separate view
     [self displayFirstTweet];
+}
+
+- (IBAction)parseFeed:(id)sender {
+    UITextField *textField = (UITextField *) sender;
+    
+    // empty array
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    self.feedItems = array;
+    [array release];
+    
+    // code adapted from https://github.com/mwaterfall/MWFeedParser
+    
+    // Create feed parser and pass the URL of the feed
+    NSURL *feedURL = [NSURL URLWithString:textField.text];
+    MWFeedParser *feedParser = [[MWFeedParser alloc] initWithFeedURL:feedURL];
+    
+    // Delegate must conform to `MWFeedParserDelegate`
+    feedParser.delegate = self;
+    
+    // Parse the feeds info (title, link) and all feed items
+    feedParser.feedParseType = ParseTypeFull;
+    
+    // Connection type
+    feedParser.connectionType = ConnectionTypeSynchronously;
+        
+    // Begin parsing
+    [feedParser parse];
 }
 
 #pragma mark -
@@ -192,6 +232,43 @@
     [self loadScrollViewWithPage:page + 1];
     
     // A possible optimization would be to unload the views+controllers which are no longer visible
+}
+
+#pragma mark -
+#pragma mark MWFeedParser Delegate Method
+// Provides info about a feed item
+- (void)feedParser:(MWFeedParser *)parser didParseFeedItem:(MWFeedItem *)item {
+    // add item into an array
+    [self.feedItems addObject:item];    
+}
+
+// Parsing complete or stopped at any time by `stopParsing`
+- (void)feedParserDidFinish:(MWFeedParser *)parser {
+    // first item in webview
+    MWFeedItem *first = [feedItems objectAtIndex:0];
+    [firstItemWebView loadHTMLString:first.content baseURL:nil];        
+    // set tag with index in array for future use
+    firstItemWebView.tag = 0;
+}
+
+#pragma mark -
+#pragma mark UIWebViewDelegate
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    NSLog(@"webView:didFailLoagWithError");
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    MWFeedItem *item =[feedItems objectAtIndex:webView.tag];
+    NSString *destination = [[request URL] absoluteString];
+    NSLog(@"destination string: %@", destination);
+    return [item.link isEqualToString:destination] || [@"about:blank" isEqualToString:destination];
+}
+
+- (void) tapAction:(UIGestureRecognizer *)gestureRecognizer {
+    MWFeedItem *item =[feedItems objectAtIndex:firstItemWebView.tag];
+    NSURL *link = [NSURL URLWithString:item.link];
+    [[UIApplication sharedApplication] openURL:link];
 }
 
 @end

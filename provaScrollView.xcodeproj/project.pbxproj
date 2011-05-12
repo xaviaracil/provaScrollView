@@ -22,6 +22,13 @@
 		470F9BAD137B1B5D0060B69C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 470F9BAB137B1B5D0060B69C /* InfoPlist.strings */; };
 		470F9BB0137B1B5D0060B69C /* provaScrollViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 470F9BAF137B1B5D0060B69C /* provaScrollViewTests.h */; };
 		470F9BB2137B1B5D0060B69C /* provaScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 470F9BB1137B1B5D0060B69C /* provaScrollViewTests.m */; };
+		A17778EC137C1BB500BB4D05 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A17778DE137C1BB500BB4D05 /* GTMNSString+HTML.m */; };
+		A17778ED137C1BB500BB4D05 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A17778E0137C1BB500BB4D05 /* MWFeedInfo.m */; };
+		A17778EE137C1BB500BB4D05 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A17778E2137C1BB500BB4D05 /* MWFeedItem.m */; };
+		A17778EF137C1BB500BB4D05 /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A17778E5137C1BB500BB4D05 /* MWFeedParser.m */; };
+		A17778F0137C1BB500BB4D05 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A17778E7137C1BB500BB4D05 /* NSDate+InternetDateTime.m */; };
+		A17778F1137C1BB500BB4D05 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A17778E9137C1BB500BB4D05 /* NSString+HTML.m */; };
+		A17778F2137C1BB500BB4D05 /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = A17778EB137C1BB500BB4D05 /* NSString+XMLEntities.m */; };
 		A1DC6755137BB211003F85BA /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC673F137BB211003F85BA /* NSObject+JSON.m */; };
 		A1DC6756137BB211003F85BA /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC673F137BB211003F85BA /* NSObject+JSON.m */; };
 		A1DC6757137BB211003F85BA /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC6742137BB211003F85BA /* SBJsonParser.m */; };
@@ -81,6 +88,22 @@
 		470F9BAE137B1B5D0060B69C /* provaScrollViewTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "provaScrollViewTests-Prefix.pch"; sourceTree = "<group>"; };
 		470F9BAF137B1B5D0060B69C /* provaScrollViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = provaScrollViewTests.h; sourceTree = "<group>"; };
 		470F9BB1137B1B5D0060B69C /* provaScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = provaScrollViewTests.m; sourceTree = "<group>"; };
+		A17778DD137C1BB500BB4D05 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		A17778DE137C1BB500BB4D05 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		A17778DF137C1BB500BB4D05 /* MWFeedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedInfo.h; sourceTree = "<group>"; };
+		A17778E0137C1BB500BB4D05 /* MWFeedInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedInfo.m; sourceTree = "<group>"; };
+		A17778E1137C1BB500BB4D05 /* MWFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedItem.h; sourceTree = "<group>"; };
+		A17778E2137C1BB500BB4D05 /* MWFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedItem.m; sourceTree = "<group>"; };
+		A17778E3137C1BB500BB4D05 /* MWFeedParser_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParser_Private.h; sourceTree = "<group>"; };
+		A17778E4137C1BB500BB4D05 /* MWFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParser.h; sourceTree = "<group>"; };
+		A17778E5137C1BB500BB4D05 /* MWFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedParser.m; sourceTree = "<group>"; };
+		A17778E6137C1BB500BB4D05 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		A17778E7137C1BB500BB4D05 /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		A17778E8137C1BB500BB4D05 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		A17778E9137C1BB500BB4D05 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		A17778EA137C1BB500BB4D05 /* NSString+XMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLEntities.h"; sourceTree = "<group>"; };
+		A17778EB137C1BB500BB4D05 /* NSString+XMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLEntities.m"; sourceTree = "<group>"; };
+		A17778F5137C1E9F00BB4D05 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		A1DC673D137BB211003F85BA /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		A1DC673E137BB211003F85BA /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		A1DC673F137BB211003F85BA /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
@@ -172,8 +195,9 @@
 		470F9B88137B1B5D0060B69C /* provaScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				A1DC676E137BB227003F85BA /* Custom Views */,
+				A17778F4137C1BB900BB4D05 /* FeedParser */,
 				A1DC673B137BB1E7003F85BA /* JSON */,
+				A1DC676E137BB227003F85BA /* Custom Views */,
 				470F9B91137B1B5D0060B69C /* provaScrollViewAppDelegate.h */,
 				470F9B92137B1B5D0060B69C /* provaScrollViewAppDelegate.m */,
 				470F9B94137B1B5D0060B69C /* MainWindow.xib */,
@@ -217,6 +241,29 @@
 				470F9BAE137B1B5D0060B69C /* provaScrollViewTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A17778F4137C1BB900BB4D05 /* FeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				A17778F5137C1E9F00BB4D05 /* GTMDefines.h */,
+				A17778DD137C1BB500BB4D05 /* GTMNSString+HTML.h */,
+				A17778DE137C1BB500BB4D05 /* GTMNSString+HTML.m */,
+				A17778DF137C1BB500BB4D05 /* MWFeedInfo.h */,
+				A17778E0137C1BB500BB4D05 /* MWFeedInfo.m */,
+				A17778E1137C1BB500BB4D05 /* MWFeedItem.h */,
+				A17778E2137C1BB500BB4D05 /* MWFeedItem.m */,
+				A17778E3137C1BB500BB4D05 /* MWFeedParser_Private.h */,
+				A17778E4137C1BB500BB4D05 /* MWFeedParser.h */,
+				A17778E5137C1BB500BB4D05 /* MWFeedParser.m */,
+				A17778E6137C1BB500BB4D05 /* NSDate+InternetDateTime.h */,
+				A17778E7137C1BB500BB4D05 /* NSDate+InternetDateTime.m */,
+				A17778E8137C1BB500BB4D05 /* NSString+HTML.h */,
+				A17778E9137C1BB500BB4D05 /* NSString+HTML.m */,
+				A17778EA137C1BB500BB4D05 /* NSString+XMLEntities.h */,
+				A17778EB137C1BB500BB4D05 /* NSString+XMLEntities.m */,
+			);
+			name = FeedParser;
 			sourceTree = "<group>";
 		};
 		A1DC673B137BB1E7003F85BA /* JSON */ = {
@@ -384,6 +431,13 @@
 				A1DC676D137BB21D003F85BA /* XSTweetView.m in Sources */,
 				A1DC6771137BB257003F85BA /* XSLightTweetView.m in Sources */,
 				A1DC677E137BE104003F85BA /* TweetViewController.m in Sources */,
+				A17778EC137C1BB500BB4D05 /* GTMNSString+HTML.m in Sources */,
+				A17778ED137C1BB500BB4D05 /* MWFeedInfo.m in Sources */,
+				A17778EE137C1BB500BB4D05 /* MWFeedItem.m in Sources */,
+				A17778EF137C1BB500BB4D05 /* MWFeedParser.m in Sources */,
+				A17778F0137C1BB500BB4D05 /* NSDate+InternetDateTime.m in Sources */,
+				A17778F1137C1BB500BB4D05 /* NSString+HTML.m in Sources */,
+				A17778F2137C1BB500BB4D05 /* NSString+XMLEntities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
