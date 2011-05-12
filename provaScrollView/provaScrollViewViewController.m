@@ -8,23 +8,27 @@
 
 #import "provaScrollViewViewController.h"
 #import "JSON.h"
+#import "TweetViewController.h"
 
 #define TWITTER_SEARCH_URL @"http://search.twitter.com/search.json?q=%@"
+#define TWITTER_STATUS_URL @"http://www.twitter.com/%@/status/%@"
 
 /* private methods defined here */
 @interface provaScrollViewViewController()
--(void) displayFirstTweet;
+- (void) displayFirstTweet;
+- (void)loadScrollViewWithPage:(int)page;
 @end
 
 @implementation provaScrollViewViewController
 
-@synthesize publicTimelineScrollView;
+@synthesize searchResultsScrollView;
 @synthesize timelineArray;
 @synthesize lightTweetViewDemo;
+@synthesize viewControllers;
 
 - (void)dealloc
 {
-    [publicTimelineScrollView release];
+    [searchResultsScrollView release];
     [lightTweetViewDemo release];
     [super dealloc];
 }
@@ -38,18 +42,16 @@
 }
 
 #pragma mark - View lifecycle
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 /*
 - (void)viewDidLoad
 {
     [super viewDidLoad];
- 
 }*/
 
 - (void)viewDidUnload
 {
-    [self setPublicTimelineScrollView:nil];
+    [self setSearchResultsScrollView:nil];
     [self setLightTweetViewDemo:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -86,7 +88,27 @@
         self.timelineArray = object;
     }
     
+
+    // init tweet view controllers
+    // view controllers are created lazily
+    // in the meantime, load the array with placeholders which will be replaced on demand
+    NSMutableArray *controllers = [[NSMutableArray alloc] init];
+    for (unsigned i = 0; i < [self.timelineArray count]; i++)
+    {
+		[controllers addObject:[NSNull null]];
+    }
+    self.viewControllers = controllers;
+    [controllers release];
     
+    // set scrollview content size as appropiate    
+    CGSize contentSize = CGSizeMake(200.0*[self.timelineArray count], self.searchResultsScrollView.frame.size.height);
+    [self.searchResultsScrollView setContentSize:contentSize];
+
+    // load first and secong page in scroll view
+    [self loadScrollViewWithPage:0];
+    [self loadScrollViewWithPage:1];
+    
+    // display first tweet in a separate view
     [self displayFirstTweet];
 }
 
@@ -112,4 +134,64 @@
     self.lightTweetViewDemo.textLabel.text = [firstTweet valueForKey:@"text"];
     
 }
+
+#pragma mark -
+#pragma mark ScrollView related methods
+- (void)loadScrollViewWithPage:(int)page
+{
+    if (page < 0)
+        return;
+    if (page >= [self.timelineArray count])
+        return;
+    
+    // replace the placeholder if necessary
+    TweetViewController *controller = [viewControllers objectAtIndex:page];
+    if ((NSNull *)controller == [NSNull null])
+    {
+        controller = [[TweetViewController alloc] initWithNibName:@"TweetView" bundle:nil];
+        [viewControllers replaceObjectAtIndex:page withObject:controller];
+        [controller release];
+    }
+    
+    // add the controller's view to the scroll view
+    if (controller.view.superview == nil)
+    {
+        CGRect frame = searchResultsScrollView.frame;
+        frame.origin.x = frame.size.width * page;
+        frame.origin.y = 0;
+        controller.view.frame = frame;
+        [searchResultsScrollView addSubview:controller.view];
+        
+        NSDictionary *tweet = [self.timelineArray objectAtIndex:page];
+        // imagen
+        NSURL *profileImageUrl = [NSURL URLWithString:[tweet valueForKey:@"profile_image_url"]];
+        [controller setPhotoUrl:profileImageUrl];
+
+        // titulo
+        controller.titleLabel.text = [tweet valueForKey:@"from_user"];
+        
+        // texto
+        controller.textLabel.text = [tweet valueForKey:@"text"];
+        
+        // link
+        NSString *status = [NSString stringWithFormat:TWITTER_STATUS_URL, [tweet valueForKey:@"from_user"], [tweet valueForKey:@"id"]];
+        NSURL *statusUrl = [NSURL URLWithString:status];
+        controller.link = statusUrl;
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)sender
+{
+    // Switch the indicator when more than 50% of the previous/next page is visible
+    CGFloat pageWidth = searchResultsScrollView.frame.size.width;
+    int page = floor((searchResultsScrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    
+    // load the visible page and the page on either side of it (to avoid flashes when the user starts scrolling)
+    [self loadScrollViewWithPage:page - 1];
+    [self loadScrollViewWithPage:page];
+    [self loadScrollViewWithPage:page + 1];
+    
+    // A possible optimization would be to unload the views+controllers which are no longer visible
+}
+
 @end

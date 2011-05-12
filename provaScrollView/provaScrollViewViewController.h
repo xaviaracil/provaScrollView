@@ -11,14 +11,18 @@
 
 @interface provaScrollViewViewController : UIViewController {
     
-    UIScrollView *publicTimelineScrollView;
+    UIScrollView *searchResultsScrollView;
     NSArray *timelineArray;
     XSLightTweetView *lightTweetViewDemo;
-}
-@property (nonatomic, retain) IBOutlet UIScrollView *publicTimelineScrollView;
-@property (nonatomic, retain) IBOutlet NSArray *timelineArray;
 
+    // array of TweetViewControllers related to searchResultsScrollView
+    NSMutableArray *viewControllers;
+
+}
+@property (nonatomic, retain) IBOutlet UIScrollView *searchResultsScrollView;
+@property (nonatomic, retain) IBOutlet NSArray *timelineArray;
 @property (nonatomic, retain) IBOutlet XSLightTweetView *lightTweetViewDemo;
+@property (nonatomic, retain) NSMutableArray *viewControllers;
 
 - (IBAction)search:(id)sender;
 @end

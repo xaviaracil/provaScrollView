@@ -46,6 +46,8 @@
 		A1DC676A137BB211003F85BA /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC6754137BB211003F85BA /* SBJsonWriter.m */; };
 		A1DC676D137BB21D003F85BA /* XSTweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC676C137BB21D003F85BA /* XSTweetView.m */; };
 		A1DC6771137BB257003F85BA /* XSLightTweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC6770137BB257003F85BA /* XSLightTweetView.m */; };
+		A1DC677E137BE104003F85BA /* TweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC677C137BE104003F85BA /* TweetViewController.m */; };
+		A1DC677F137BE104003F85BA /* TweetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DC677D137BE104003F85BA /* TweetView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,10 @@
 		A1DC676C137BB21D003F85BA /* XSTweetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSTweetView.m; sourceTree = "<group>"; };
 		A1DC676F137BB257003F85BA /* XSLightTweetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSLightTweetView.h; sourceTree = "<group>"; };
 		A1DC6770137BB257003F85BA /* XSLightTweetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSLightTweetView.m; sourceTree = "<group>"; };
+		A1DC6772137BCC85003F85BA /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A1DC677B137BE103003F85BA /* TweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetViewController.h; sourceTree = "<group>"; };
+		A1DC677C137BE104003F85BA /* TweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetViewController.m; sourceTree = "<group>"; };
+		A1DC677D137BE104003F85BA /* TweetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 		470F9B73137B1B5C0060B69C = {
 			isa = PBXGroup;
 			children = (
+				A1DC6772137BCC85003F85BA /* README */,
 				470F9B88137B1B5D0060B69C /* provaScrollView */,
 				470F9BA8137B1B5D0060B69C /* provaScrollViewTests */,
 				470F9B81137B1B5D0060B69C /* Frameworks */,
@@ -172,6 +179,9 @@
 				470F9B94137B1B5D0060B69C /* MainWindow.xib */,
 				470F9B97137B1B5D0060B69C /* provaScrollViewViewController.h */,
 				470F9B98137B1B5D0060B69C /* provaScrollViewViewController.m */,
+				A1DC677B137BE103003F85BA /* TweetViewController.h */,
+				A1DC677C137BE104003F85BA /* TweetViewController.m */,
+				A1DC677D137BE104003F85BA /* TweetView.xib */,
 				470F9B9A137B1B5D0060B69C /* provaScrollViewViewController.xib */,
 				470F9B89137B1B5D0060B69C /* Supporting Files */,
 			);
@@ -321,6 +331,7 @@
 				470F9B8D137B1B5D0060B69C /* InfoPlist.strings in Resources */,
 				470F9B96137B1B5D0060B69C /* MainWindow.xib in Resources */,
 				470F9B9C137B1B5D0060B69C /* provaScrollViewViewController.xib in Resources */,
+				A1DC677F137BE104003F85BA /* TweetView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +383,7 @@
 				A1DC6769137BB211003F85BA /* SBJsonWriter.m in Sources */,
 				A1DC676D137BB21D003F85BA /* XSTweetView.m in Sources */,
 				A1DC6771137BB257003F85BA /* XSLightTweetView.m in Sources */,
+				A1DC677E137BE104003F85BA /* TweetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
