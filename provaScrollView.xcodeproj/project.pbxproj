@@ -15,13 +15,15 @@
 		470F9B93137B1B5D0060B69C /* provaScrollViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 470F9B92137B1B5D0060B69C /* provaScrollViewAppDelegate.m */; };
 		470F9B96137B1B5D0060B69C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470F9B94137B1B5D0060B69C /* MainWindow.xib */; };
 		470F9B99137B1B5D0060B69C /* provaScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470F9B98137B1B5D0060B69C /* provaScrollViewViewController.m */; };
-		470F9B9C137B1B5D0060B69C /* provaScrollViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470F9B9A137B1B5D0060B69C /* provaScrollViewViewController.xib */; };
+		470F9B9C137B1B5D0060B69C /* provaScrollViewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470F9B9A137B1B5D0060B69C /* provaScrollViewView.xib */; };
 		470F9BA3137B1B5D0060B69C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F9B82137B1B5D0060B69C /* UIKit.framework */; };
 		470F9BA4137B1B5D0060B69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F9B84137B1B5D0060B69C /* Foundation.framework */; };
 		470F9BA5137B1B5D0060B69C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F9B86137B1B5D0060B69C /* CoreGraphics.framework */; };
 		470F9BAD137B1B5D0060B69C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 470F9BAB137B1B5D0060B69C /* InfoPlist.strings */; };
 		470F9BB0137B1B5D0060B69C /* provaScrollViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 470F9BAF137B1B5D0060B69C /* provaScrollViewTests.h */; };
 		470F9BB2137B1B5D0060B69C /* provaScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 470F9BB1137B1B5D0060B69C /* provaScrollViewTests.m */; };
+		A1564677137D2455008216B8 /* FeedItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1564675137D2455008216B8 /* FeedItemViewController.m */; };
+		A1564678137D2455008216B8 /* FeedItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1564676137D2455008216B8 /* FeedItemView.xib */; };
 		A17778EC137C1BB500BB4D05 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A17778DE137C1BB500BB4D05 /* GTMNSString+HTML.m */; };
 		A17778ED137C1BB500BB4D05 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A17778E0137C1BB500BB4D05 /* MWFeedInfo.m */; };
 		A17778EE137C1BB500BB4D05 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A17778E2137C1BB500BB4D05 /* MWFeedItem.m */; };
@@ -81,13 +83,16 @@
 		470F9B95137B1B5D0060B69C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		470F9B97137B1B5D0060B69C /* provaScrollViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = provaScrollViewViewController.h; sourceTree = "<group>"; };
 		470F9B98137B1B5D0060B69C /* provaScrollViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = provaScrollViewViewController.m; sourceTree = "<group>"; };
-		470F9B9B137B1B5D0060B69C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/provaScrollViewViewController.xib; sourceTree = "<group>"; };
+		470F9B9B137B1B5D0060B69C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/provaScrollViewView.xib; sourceTree = "<group>"; };
 		470F9BA2137B1B5D0060B69C /* provaScrollViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = provaScrollViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		470F9BAA137B1B5D0060B69C /* provaScrollViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "provaScrollViewTests-Info.plist"; sourceTree = "<group>"; };
 		470F9BAC137B1B5D0060B69C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		470F9BAE137B1B5D0060B69C /* provaScrollViewTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "provaScrollViewTests-Prefix.pch"; sourceTree = "<group>"; };
 		470F9BAF137B1B5D0060B69C /* provaScrollViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = provaScrollViewTests.h; sourceTree = "<group>"; };
 		470F9BB1137B1B5D0060B69C /* provaScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = provaScrollViewTests.m; sourceTree = "<group>"; };
+		A1564674137D2455008216B8 /* FeedItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItemViewController.h; sourceTree = "<group>"; };
+		A1564675137D2455008216B8 /* FeedItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItemViewController.m; sourceTree = "<group>"; };
+		A1564676137D2455008216B8 /* FeedItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedItemView.xib; sourceTree = "<group>"; };
 		A17778DD137C1BB500BB4D05 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		A17778DE137C1BB500BB4D05 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		A17778DF137C1BB500BB4D05 /* MWFeedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedInfo.h; sourceTree = "<group>"; };
@@ -206,8 +211,11 @@
 				A1DC677B137BE103003F85BA /* TweetViewController.h */,
 				A1DC677C137BE104003F85BA /* TweetViewController.m */,
 				A1DC677D137BE104003F85BA /* TweetView.xib */,
-				470F9B9A137B1B5D0060B69C /* provaScrollViewViewController.xib */,
+				470F9B9A137B1B5D0060B69C /* provaScrollViewView.xib */,
 				470F9B89137B1B5D0060B69C /* Supporting Files */,
+				A1564674137D2455008216B8 /* FeedItemViewController.h */,
+				A1564675137D2455008216B8 /* FeedItemViewController.m */,
+				A1564676137D2455008216B8 /* FeedItemView.xib */,
 			);
 			path = provaScrollView;
 			sourceTree = "<group>";
@@ -377,8 +385,9 @@
 			files = (
 				470F9B8D137B1B5D0060B69C /* InfoPlist.strings in Resources */,
 				470F9B96137B1B5D0060B69C /* MainWindow.xib in Resources */,
-				470F9B9C137B1B5D0060B69C /* provaScrollViewViewController.xib in Resources */,
+				470F9B9C137B1B5D0060B69C /* provaScrollViewView.xib in Resources */,
 				A1DC677F137BE104003F85BA /* TweetView.xib in Resources */,
+				A1564678137D2455008216B8 /* FeedItemView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +447,7 @@
 				A17778F0137C1BB500BB4D05 /* NSDate+InternetDateTime.m in Sources */,
 				A17778F1137C1BB500BB4D05 /* NSString+HTML.m in Sources */,
 				A17778F2137C1BB500BB4D05 /* NSString+XMLEntities.m in Sources */,
+				A1564677137D2455008216B8 /* FeedItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,12 +497,12 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		470F9B9A137B1B5D0060B69C /* provaScrollViewViewController.xib */ = {
+		470F9B9A137B1B5D0060B69C /* provaScrollViewView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				470F9B9B137B1B5D0060B69C /* en */,
 			);
-			name = provaScrollViewViewController.xib;
+			name = provaScrollViewView.xib;
 			sourceTree = "<group>";
 		};
 		470F9BAB137B1B5D0060B69C /* InfoPlist.strings */ = {

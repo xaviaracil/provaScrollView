@@ -17,21 +17,27 @@
     XSLightTweetView *lightTweetViewDemo;
 
     // array of TweetViewControllers related to searchResultsScrollView
-    NSMutableArray *viewControllers;
+    NSMutableArray *tweetViewControllers;
     
     // array of feed items
     NSMutableArray *feedItems;
     UIView *webContainerView;
     UIWebView *firstItemWebView;
 
+    // array of FeedItemViewController related to feedScrollView
+    NSMutableArray *feedViewControllers;
+    UIScrollView *feedScrollView;
+
 }
 @property (nonatomic, retain) IBOutlet UIScrollView *searchResultsScrollView;
 @property (nonatomic, retain) IBOutlet NSArray *timelineArray;
 @property (nonatomic, retain) IBOutlet XSLightTweetView *lightTweetViewDemo;
-@property (nonatomic, retain) NSMutableArray *viewControllers;
+@property (nonatomic, retain) NSMutableArray *tweetViewControllers;
+@property (nonatomic, retain) NSMutableArray *feedViewControllers;
 @property (nonatomic, retain) NSMutableArray *feedItems;
 @property (nonatomic, retain) IBOutlet UIView *webContainerView;
 @property (nonatomic, retain) IBOutlet UIWebView *firstItemWebView;
+@property (nonatomic, retain) IBOutlet UIScrollView *feedScrollView;
 
 - (IBAction)search:(id)sender;
 - (IBAction)parseFeed:(id)sender;
